@@ -1,6 +1,6 @@
 spring:
-  profiles:
-    dev:
-      lucky-word: Irish
-    prd:
-      lucky-word: Fores
+  profiles: dev
+lucky-word: Irish
+
+  profiles: prd
+lucky-word: Fores
