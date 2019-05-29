@@ -2,5 +2,7 @@ spring:
   profiles: dev
 lucky-word: Irish
 
+---
+spring:
   profiles: prd
 lucky-word: Fores
