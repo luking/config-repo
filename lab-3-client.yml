@@ -1,1 +1,6 @@
-lucky-word: Irish
+spring:
+  profiles:
+    dev:
+      lucky-word: Irish
+    prd:
+      lucky-word: Fores
