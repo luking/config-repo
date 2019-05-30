@@ -12,7 +12,6 @@ word: I,You,He,She,It
 spring:
   profiles: verb
 word: ran,knew,had,saw,bought
-
 ---
 spring:
   profiles: article
