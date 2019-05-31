@@ -7,23 +7,33 @@ eureka:
 ---
 spring:
   profiles: subject
+  application: 
+    name: subject-server
 word: I,You,He,She,It
 
 ---
 spring:
   profiles: verb
+  application:
+    name: verb-server
 word: ran,knew,had,saw,bought
 ---
 spring:
   profiles: article
+  application:
+    name: article-server
 word: a,the
 
 ---
 spring:
   profiles: adjective
+  applicaiton:
+    name: adjective-server
 word: reasonable,leaky,suspicious,ordinary,unlikely
 
 ---
 spring:
   profiles: noun
+  application:
+    name: noun-server
 word: boat,book,vote,seat,backpack,partition,groundhog  
