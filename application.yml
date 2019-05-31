@@ -25,7 +25,7 @@ spring:
 word: a,the
 ---
 spring:
-  profiles: adjective
+  profiles: adjective2
   applicaiton:
     name: adj-server
 word: reasonable,leaky,suspicious,ordinary,unlikely
@@ -35,3 +35,9 @@ spring:
   application:
     name: noun-server
 word: boat,book,vote,seat,backpack,partition,groundhog  
+---
+spring:
+  profiles: adjective
+  application:
+    name: arjective-server
+word: reasonable,leaky,suspicious,ordinary,unlikely
