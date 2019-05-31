@@ -46,4 +46,6 @@ word: boat,book,vote,seat,backpack,partition,groundhog
 ---
 spring:
   profiles: cold-noun
+  application:
+    name: noun-server
 word: icicle,refrigerator,blizzard,snowball
