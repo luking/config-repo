@@ -23,14 +23,12 @@ spring:
   application:
     name: article-server
 word: a,the
-
 ---
 spring:
   profiles: adjective
   applicaiton:
-    name: adjectives-server
+    name: adj-server
 word: reasonable,leaky,suspicious,ordinary,unlikely
-
 ---
 spring:
   profiles: noun
