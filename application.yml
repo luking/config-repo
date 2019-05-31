@@ -3,6 +3,8 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8010/eureka/
       #defaultZone: http://eureka-secondary:8012/eureka/,http://eureka-tertiary:8013/eureka/,http://eureka-primary:8011/eureka
+  instance:
+    instanceid: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
 
 ---
 spring:
@@ -31,13 +33,17 @@ spring:
 word: reasonable,leaky,suspicious,ordinary,unlikely
 ---
 spring:
+  profiles: adjective
+  application:
+    name: arjective-server
+word: reasonable,leaky,suspicious,ordinary,unlikely
+---
+spring:
   profiles: noun
   application:
     name: noun-server
 word: boat,book,vote,seat,backpack,partition,groundhog  
 ---
 spring:
-  profiles: adjective
-  application:
-    name: arjective-server
-word: reasonable,leaky,suspicious,ordinary,unlikely
+  profiles: cold-noun
+words: icicle,refrigerator,blizzard,snowball
