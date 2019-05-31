@@ -28,7 +28,7 @@ word: a,the
 spring:
   profiles: adjective
   applicaiton:
-    name: adjective-server
+    name: adjectives-server
 word: reasonable,leaky,suspicious,ordinary,unlikely
 
 ---
